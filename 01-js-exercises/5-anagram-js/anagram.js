@@ -12,9 +12,8 @@ function isAnagram(word1, word2){
   if (word1Sorted !== word2Sorted) {
     return false;
   }
-  if (word1Sorted === word2Sorted) {
-    return true;
-  }
+  return true;
+
 }
 
 console.log(word1 + " and "+ word2 + " are anagrams: " + isAnagram(word1, word2) +".");
