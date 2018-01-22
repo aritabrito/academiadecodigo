@@ -20,13 +20,11 @@ public class Anagram {
       strOne = sortString(strOne);
       strTwo = sortString(strTwo);
         
-
       if (strOne.length() != strTwo.length()) {
           return false;
       }
-
-      if (!strOne.contains(strTwo)) {
-          return false;
+      if (!strOne.equals(strTwo)) {
+        return false;
       }
       return true;
     }
